@@ -3,7 +3,7 @@ import pymongo
 #make sure mongo service is running
 
 from pymongo import MongoClient
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient('mongodb://127.0.0.1:27017/')
 
 #create database
 db = client.test_database
