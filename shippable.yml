@@ -5,3 +5,12 @@ install: pip install --use-mirrors -r requirements.txt
 services: mongodb
 
 script: python sample.py
+
+notifications:
+     email:
+         recipients:
+             - vidyac.raghav@gmail.com
+             - vidyatest13@gmail.com
+
+         on_success: change
+         on_failure: always
